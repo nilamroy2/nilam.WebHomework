@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Visualization Dashbord</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <!-- Start of Navigation Bar --->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+            <a class="active navbar-brand brand_color" href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plot</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End of Navigation Bar -->
+        <!-- Start of the Jumbotron-->
+    <div class="clearfix"></div>
+    <!-- <div class="jumbotron jumbotron-fluid">-->
+         <div class="container">
+             <div class="row">
+                <p> <div class="left col col-lg-6 col-md-6 col-xs-12">
+                     <h2>Summary: Latitude vs. Wind Speed</h2>
+                     <hr>
+                     <img id="image" src="Resources/assets/images/Fig4.png" class="pull-left img-responsive img-rounded" alt="Latitude vs Wind Speed">
+                     
+                     <p>Contributing factors to wind speed include, thunderstorms and tornadoes. Tornadoes are more common in United States than in any other country, receives more than 1,200 tornadoes annually which occurs March through June. As spring passes and summer begins, the mass of warm moist air moves northwest into the Great Plains and Midwestern states. During the months of May and June <a href="https://en.wikipedia.org/wiki/Tornadoes_in_the_United_States">("tornado season")</a>, tornado activity is as its peak in the southern Great Plains. The air mass then moves northward into the Northern Great Plains and the Great Lakes area, causing a tornado activity peak in these areas during the summer months. During the late summer and early fall months, tornado activity in the United States tapers off. This is due to the relatively small difference between the temperature at the boundary of the hot air mass and the cool air mass at that time and an extension of the Bermuda High sitting over parts of the United States.
+                     </p>
+                 </div>
+                 <div class="right col col-lg-6 col-md-6 col-xs-12">
+                     <h2>Visualizations</h2>
+                     <hr>
+                     <div class="row">
+                         <div class="col-sm-3 col-lg-6">
+                             <div class="thumbnail">
+                                 <a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" class="img-responsive" alt="Latitude vs Temperature"></a>
+                             </div>
+                         </div>
+                         <div class="col-sm-3 col-lg-6">
+                             <div class="thumbnail">
+                                 <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" class="img-responsive" alt="Latitude vs Humidity"></a>
+                             </div>
+                        </div>
+                     <!-- </div>
+                     <div class="row"> -->
+                         <div class="col-sm-3 col-lg-6">
+                             <div class="thumbnail">
+                                 <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" class="img-responsive" alt="Latitude vs Cloudiness"></a>
+                             </div>
+                         </div>
+                         <div class="col-sm-3 col-lg-6">
+                             <div class="thumbnail">
+                                 <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" class="active-image img-responsive" alt="Latitude vs Wind Speed"></a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="clearfix"></div>
+             </div>
+         </div>
+    <!-- </div> -->
+
+    <!-- Start of the Footer-->
+         <div class="container-fluid">
+            <footer>
+                  <p>
+                  <small>© Copyright coding Bootcamp 2017</small>
+                  </p>
+           </footer>
+          </div>
+      <!-- Bootstrap core JavaScript-->
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+    </html>
